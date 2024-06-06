@@ -15,8 +15,7 @@ If you use our work, please cite the paper:
 
 ## Annotations for Evaluation
 
-The most comprehensive set of annotations can be found in the [Lhotse](https://github.com/mmaciej2/lhotse/tree/sbcsae) recipe.
-It also includes code to download the corpus.
+The most comprehensive set of annotations can be found in the [Lhotse](https://github.com/mmaciej2/lhotse/tree/sbcsae) recipe, which also includes code to download the corpus.
 However, if you would like to merely download the basic annotation files for use with your own systems without using Lhotse, these files can be found in the "ASR" and "Diarization" subdirectories of this respository.
 
 ## Preparation Scripts
