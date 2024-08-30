@@ -22,7 +22,7 @@ However, if you would like to merely download the basic annotation files for use
 
 The code that was used to prepare the data is contained in three repositories:
 
-- [Lhotse Recipe](https://github.com/mmaciej2/lhotse/tree/sbcsae) - The Lhotse recipe contains the bulk of the processing, normalization, and correction required to prepare the annotations and metadata for automatic processing. It also contains code to download the corpus.
+- [Lhotse Recipe](https://github.com/mmaciej2/lhotse/tree/sbcsae) - The Lhotse recipe contains the bulk of the processing, normalization, and correction required to prepare the annotations and metadata for automatic processing. It also contains code to download the corpus. (Note: not yet integrated into Lhotse main repo, but will be soon)
 - [Anonymization Detection](https://github.com/mmaciej2/sbcsae_anon_detection) - This repository contains the code used to detect the regions of the audio that had been low-pass filtered to remove personally identifiable information from the speech.
 -  Alignment for VAD - This repository contains the code used to align the transcripts to re-segment single-speaker regions for better voice activity detection (VAD) boundaries.
 
