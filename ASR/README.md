@@ -1,10 +1,5 @@
 ### Annotations for ASR Evaluation
 
-- aligned_for_asr.stm (preferred): Re-aligned segments containing a lot of silence only to make sure all the spoken words are within the re-aligned boundaries).
-- aligned_for_diar.stm (non-preferred): The boundaries are thighter, some words may be cut short.
-- original.stm (depends): Original not aligned segments.
-
-##### Suggestions
-If you do not care about the segmentation, the choice of the stm files does not matter; however, aligned stm files contain manual dataset fixes, such as added redactions or marked words that are not audible (ToDo: Add description of the manual data corrections).
-If you want to cut audio based on the ground truth segmentation, we strongly advice to use `aligned_for_asr.stm`.
-If you care about the precision of segmentation and do not want to cut audio based on the segmentation, `aligned_for_diar.stm` may be the right choice for you.
+- `aligned_for_asr.stm` (preferred) – STM file for the realignments targeting ASR evaluation, with excessive bounding silence trimmed in a conservative manner to ensure all words lie within the boundaries
+- `aligned_for_diar.stm` (non-preferred) – STM file for the realignments targeting diarization evaluation, with segements more closely tracking the true voice activity, at the cost of some words potentially having been trimmed
+- `original.stm` (non-preferred) – STM file for the original segmentation of the corpus
