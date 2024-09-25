@@ -1,4 +1,4 @@
-### Annotations for Diarziation Evaluation
+### Annotations for Diarization Evaluation
 
 - `ref.rttm` (non-preferred) – RTTM file for the original segmentation of the corpus
 - `ref_realigned.rttm` (preferred) – RTTM file using the resegmentation for improved VAD marks
