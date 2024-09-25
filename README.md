@@ -33,6 +33,6 @@ The code that was used to prepare the data is contained in three repositories:
 - [Anonymization Detection](https://github.com/mmaciej2/sbcsae_anon_detection) - This repository contains the code used to detect the regions of the audio that had been low-pass filtered to remove personally identifiable information from the speech.
 -  Alignment for VAD - This repository contains the code used to align the transcripts to re-segment single-speaker regions for better voice activity detection (VAD) boundaries.
 
-## Corpus Statistics
+## Further Details
 
-TODO
+Detailed statistics and audio samples are available on the [dataset website](https://domklement.github.io/sbcsae/).
