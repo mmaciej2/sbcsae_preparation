@@ -22,7 +22,7 @@ If you use our work, please cite our paper as well as the corpus itself:
 
 ## Annotations for Evaluation
 
-The most comprehensive set of annotations can be generated with the [Lhotse](https://github.com/mmaciej2/lhotse/tree/sbcsae) recipe, which also includes code to download the corpus from [OpenSLR](https://openslr.org/155/).
+The most comprehensive set of annotations can be generated with the [Lhotse](https://github.com/lhotse-speech/lhotse) recipe, which also includes code to download the corpus from [OpenSLR](https://openslr.org/155/).
 However, if you would like to merely download the basic annotation files for use with your own systems without using Lhotse, these files can be found in the "ASR" and "Diarization" subdirectories of this respository.
 The dataset is also available via [Hugging Face](https://huggingface.co/datasets/dklement/SBCSAE).
 
@@ -30,6 +30,6 @@ The dataset is also available via [Hugging Face](https://huggingface.co/datasets
 
 The code that was used to prepare the data is contained in three repositories:
 
-- [Lhotse Recipe](https://github.com/mmaciej2/lhotse/tree/sbcsae) - The Lhotse recipe contains the bulk of the processing, normalization, and correction required to prepare the annotations and metadata for automatic processing. It also contains code to download the corpus. (Note: not yet integrated into Lhotse main repo, but will be soon)
+- [Lhotse Recipe](https://github.com/lhotse-speech/lhotse/blob/master/lhotse/recipes/sbcsae.py) - The Lhotse recipe contains the bulk of the processing, normalization, and correction required to prepare the annotations and metadata for automatic processing. It also contains code to download the corpus.
 - [Anonymization Detection](https://github.com/mmaciej2/sbcsae_anon_detection) - This repository contains the code used to detect the regions of the audio that had been low-pass filtered to remove personally identifiable information from the speech.
 -  Alignment for VAD - This repository contains the code used to align the transcripts to re-segment single-speaker regions for better voice activity detection (VAD) boundaries. (Note: code currently undergoing cleanup for release)
